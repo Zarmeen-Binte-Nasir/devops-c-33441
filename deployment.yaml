@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-c-33441
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devops-c-33441
+  template:
+    metadata:
+      labels:
+        app: devops-c-33441
+    spec:
+      containers:
+        - name: devops-c-33441
+          image: devops-c-33441:v1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
