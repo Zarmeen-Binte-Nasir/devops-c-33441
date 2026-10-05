@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: devops-c-33441
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: devops-c-33441
